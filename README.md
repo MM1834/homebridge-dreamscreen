@@ -7,9 +7,10 @@ Lightweight homebridge plugin that allows you to control your DreamScreen Ambien
 
 install homebridge: ```npm install -g homebridge```                        
 install this plugin: ```npm install -g homebridge-dreamscreen```                   
-update your ```~/.homebridge/config.json``` file, see below.
+update your ```~/.homebridge/config.json``` file with correct ip adress, see below.
 
 ## Example config:
+#### Dont forget to set the correct ip.
 ```
 "accessories": [
   {
@@ -19,6 +20,8 @@ update your ```~/.homebridge/config.json``` file, see below.
   }
 ]
 ```
+#### The ip adress of you're dreamscreen can be found in the app under "Update and Reset".
+
 ## Using the plugin
 You get two accesoires packed in one tile, seperating them is completely possible 
 
