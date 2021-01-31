@@ -1,7 +1,8 @@
 # Overview
 
 Lightweight homebridge plugin that allows you to control your DreamScreen Ambient TV device with homekit.
-Features full control over color, video, ambient and sleep mode.
+Features full control over color, video, ambient and sleep mode.                
+It uses my python script featured here: https://github.com/ToracX/DreamScreenCommander
 
 
 ## Installation:
