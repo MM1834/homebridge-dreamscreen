@@ -1,19 +1,19 @@
-
 {
-  "name": "homebridge-dreamscreen",
-  "description": "An lightweight homebridge plugin for controlling and using dreamscreen ambilight.",
-  "version": "1.0.0"
-  
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ToracX/homebridge-dreamscreen"
-  },
-  "keywords": [homebridge],
-  "author": "Torac"
-  
-  "bugs": {
-    "email": jyp.schuthof3@gmail.com,
-    "url": "https://github.com/ToracX/homebridge-dreamscreen/issues"
-  },
-  "homepage": "https://github.com/ToracX/homebridge-dreamscreen"
+	"name": "homebridge-dreamscreen",
+	"description": "An lightweight homebridge plugin for controlling and using dreamscreen ambilight.",
+	"version": "1.0.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ToracX/homebridge-dreamscreen"
+	},
+	"author": "Torac",
+	"dependencies": {
+		"colorsys": "1.0.22",
+		"child_process": "1.0.2"
+	},
+	"bugs": {
+		"email": "jyp.schuthof3 @gmail.com",
+		"url": "https://github.com/ToracX/homebridge-dreamscreen/issues"
+	},
+	"homepage": "https://github.com/ToracX/homebridge-dreamscreen"
 }
