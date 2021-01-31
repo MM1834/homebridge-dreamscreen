@@ -7,6 +7,14 @@
 		"url": "https://github.com/ToracX/homebridge-dreamscreen"
 	},
 	"author": "Torac",
+  	"engines": {
+    		"homebridge": ">=0.2.0",
+    		"node": ">4.0.0"
+  	},
+  	"keywords": [
+    		"homebridge-plugin",
+    		"homekit"
+  	],
 	"dependencies": {
 		"colorsys": "1.0.22",
 		"child_process": "1.0.2"
