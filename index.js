@@ -12,7 +12,7 @@ module.exports = function(homebridge) {
 function DreamscreenAccessory(log, config) {
 	this.name = config["name"];
 	this.ipadress = config["ipadress"];
-	this.ambilightName = this.name + "2";
+	this.ambilightName = "mode";
 	this.lightService = new Service.Lightbulb(this.name);
 	this.lightService.subtype = this.name;
 	this.infoService = new Service.AccessoryInformation();
