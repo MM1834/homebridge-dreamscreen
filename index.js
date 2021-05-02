@@ -27,7 +27,7 @@ DreamscreenAccessory.prototype.setcolor = function(ipadress) {
     		v: global.brightness
   	});
   	this.log('set dreamscreen color to', color.r, color.g, color.b);
-	command = "python /usr/local/lib/node_modules/homebridge-dreamscreen/dreamscreen.py -i " + ipadress + " -c " + '"' + color.r + " " + color.g + " " + color.b + '"'
+	command = "python " + __dirname + "/dreamscreen.py -i " + ipadress + " -c " + '"' + color.r + " " + color.g + " " + color.b + '"'
  	exec(command)
 }
 
@@ -39,7 +39,7 @@ DreamscreenAccessory.prototype.getServices = function() {
 	.on('set', (value, callback) => {
 		global.brightness = value
 		this.log("Set dreamscreen brightness to:", value)
-  		command = "python /usr/local/lib/node_modules/homebridge-dreamscreen/dreamscreen.py -i " + this.ipadress + " -b"  + value
+  		command = "python " + __dirname + "/dreamscreen.py -i " + this.ipadress + " -b"  + value
 		exec(command)				  
 		callback();
 	})
@@ -82,12 +82,12 @@ DreamscreenAccessory.prototype.getServices = function() {
 			this.log("Set dreamscreen power to", value)
 			this.lightService.setCharacteristic(Characteristic.Saturation, 0);
 			this.lightService.setCharacteristic(Characteristic.Hue, 0);
-			commandon = "python /usr/local/lib/node_modules/homebridge-dreamscreen/dreamscreen.py -i " + this.ipadress + " -m 1"
+			commandon = "python " + __dirname + "/dreamscreen.py -i " + this.ipadress + " -m 1"
 			exec(commandon)							
 			callback();
 	} else {
 			this.log("Set dreamscreen power to", value)
-			commandoff = "python /usr/local/lib/node_modules/homebridge-dreamscreen/dreamscreen.py -i " + this.ipadress + " -m 0"
+			commandoff = "python " + __dirname + "/dreamscreen.py -i " + this.ipadress + " -m 0"
 			exec(commandoff)					  
 			callback();
 		}
